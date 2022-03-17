@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let str = prompt('nhập chuỗi vào đây');
+    let arr=str.split('')
+    let count=0;
+    let arr1=['a','o','e','u','i'];
+    function check() {
+        for (let i = 0;i<arr.length;i++){
+            for (let j = 0;j<arr1.length;j++){
+                if (arr[i]===arr1[j]){
+                    count+=1;
+                }
+            }if (count===0) {
+                return false
+            }
+        }
+        document.write(count)
+    }
+
+    check()
+
+</script>
+</body>
+</html>
